@@ -1,6 +1,5 @@
 package com.example.Ecommerce.service;
 
-import com.example.Ecommerce.entidades.Cliente;
 import com.example.Ecommerce.entidades.Produtos;
 import com.example.Ecommerce.repositorios.ProdutosRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,4 +35,31 @@ public class ProdutosService {
             produtosRepository.delete(produtos);
     }
 
+    public List<Produtos> getByNome(String nome){
+        return produtosRepository.findByNome(nome);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

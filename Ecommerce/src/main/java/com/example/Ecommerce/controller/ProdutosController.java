@@ -40,5 +40,31 @@ public class ProdutosController {
             produtosService.delete(produtos);
     }
 
+    @GetMapping("/{nome}")
+    public List<Produtos> getProdutoByNome(@PathVariable String nome) {
+        return produtosService.getByNome(nome);
+    };
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
